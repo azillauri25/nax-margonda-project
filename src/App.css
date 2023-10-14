@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Global styles */
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Style the header */
+/* .main-header {
+  background-color: #684cec;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 40px;
+} */
+
+/* Style the logo */
+/* .logo img {
+  width: 280px;
+} */
+
+/* Style the navbar */
+/* .navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+  padding-right: 30px;
+} */
+
+/* .navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+} */
+
+/* Hover effect for the navbar links */
+/* .navbar a:hover {
+  text-decoration: underline;
+  color: yellow;
+} */
+nav {
+  background-color: #684cec;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 180px;
+  margin: 5px;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 15px;
+  padding: 40px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+  margin-right: 10px;
+}
+nav ul li:last-of-type {
+  margin-right: 50px;
+}
+
+nav ul li a:hover {
+  color: orangered;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+/* 
+main {
+  padding-top: 7rem;
+} */
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 30px;
+    margin-left: 50px;
+
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color:white;
+  }
+  
+}
+
+/* Style the card container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Ini bisa ditambahkan jika diperlukan untuk menengahkan teks secara horizontal */
+}
+
+.card img {
+  width: 100px; /* Sesuaikan dengan lebar gambar yang Anda inginkan */
+  display: block; /* Untuk menghilangkan margin bawah default yang mungkin ada pada gambar */
+  margin: 0 auto; /* Ini akan memposisikan gambar di tengah secara horizontal */
+}
+
+
+/* Style sections */
+section {
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#tentang p, #try p{
+  font-size: 15px;
+}
+.wrapper{
+  margin-top: 10%;
+  position: relative;
+}
+
+.wrapper h1{
+  font-family: 'Poppins', cursive;
+  font-size: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.def{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.def .definisi{
+  background: #dfd9f8;
+  margin: 5px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #271e53;  
+  position: relative;
+  border-radius: 20px;
+}
+
+
+.def .definisi p{
+  color: #160b46;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.def .definisi h3{
+  color: #160b46;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.def .definisi .def_img{
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #160b46;
+}
+
+.def .definisi .def_img img{
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+}
+.card img {
+  width: 100px;
+  position: center;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+footer {
+  background-color: #684cec;
+  padding: 30px;
+  text-align: center;
+  position: flex;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
+/* Container styles */
+.container {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+/* Button styles */
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 11rem;
+  background-color: #ab99fa;
+}
+
+.btn-left {
+  border-radius: 3rem 3rem 3rem 3rem;
+}
+
+.btn-right {
+  border-radius: 3rem 3rem 3rem 3rem;
+}
+
+.active {
+  color: #000000;
+  background-color: #684cec;
+}
+
+/* Card styles */
+.card {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Textarea styles */
+textarea {
+  min-height: 100px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 2px solid #9d87ff;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.9rem;
+}
+
+textarea::placeholder {
+  color: #d1d1d1;
+}
+
+/* Submit button styles */
+.submit-btn {
+  border-radius: 4rem;
+  margin-top: 1rem;
+}
+
+.encrypt-btn {
+  color: white;
+  background-color: #684cec;
+}
+
+.decrypt-btn {
+  color: #000000;
+  background-color: #9f89ff;
+}
+
+/* Content display styles */
+.content {
+  width: 26rem;
+  margin-top: 2rem;
+  border: 2px dashed #ab99fa;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #a2a2a2;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #2e2e2e;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff0000;
+  margin-top: 10px;
+}
